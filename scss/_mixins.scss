@@ -1,0 +1,11 @@
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #{flex-direction}: $direction;
+}
+@mixin cricleSize{
+    padding: 1vw;
+    height: 1.5em;
+    width: 1.5em;
+}

@@ -1,0 +1,97 @@
+@media screen and(max-width:768px) {
+	.card {
+		width: 80vw;
+		height: 60vh;
+		background-color: $darkBlue;
+		border-radius: 5%;
+		padding: 5%;
+		display: flex;
+		flex-direction: column;
+	}
+	.ratings {
+		//first card
+		display: flex;
+		flex-direction: column;
+        height: 100%;
+		h2 {
+			color: $white;
+		}
+		article {
+			margin: 0;
+			color: $lightGrey;
+			line-height: 1.7em;
+		}
+		img {
+			@include cricleSize;
+            padding: 3vw;
+			border-radius: 50%;
+			background-color: $mediumGrey;
+		}
+		.rating {
+			@include flexCenter(row);
+			margin: auto 0;
+			justify-content: space-between;
+		}
+		.circle {
+			@include cricleSize;
+			text-align: center;
+			background-color: $mediumGrey;
+			line-height: 1.5em;
+            padding: 3vw;
+			border-radius: 50%;
+			transition: ease 0.3s;
+			color: $lightGrey;
+		}
+		.circle:hover {
+			background-color: $orange;
+			color: white;
+			cursor: pointer;
+		}
+		.active {
+			background-color: $lightGrey;
+			color: $white;
+		}
+		.submit {
+			margin: auto 0;
+			border-radius: 40px;
+			background-color: $orange;
+			color: $white;
+			padding: 5%;
+			text-align: center;
+			text-transform: uppercase;
+			transition: ease 0.3s;
+		}
+		.submit:hover {
+			background-color: $white;
+			color: $orange;
+			cursor: pointer;
+		}
+	}
+	.thanks {
+		//second card
+		@include flexCenter(column);
+		display: none;
+        height: 100%;
+		img {
+            display: flex;
+			margin: 7.5% 0;
+		}
+		h2 {
+			color: $white;
+			margin-bottom: 0;
+			line-height: 2em;
+		}
+		article {
+			text-align: center;
+			color: $lightGrey;
+			line-height: 1.7em;
+		}
+		.choice {
+			color: $orange;
+			background-color: $mediumGrey;
+			border-radius: 20px;
+			padding: 3%;
+			text-align: center;
+		}
+	}
+}
